@@ -79,6 +79,11 @@ hr {
   height: 0;
   overflow: visible;
 }
+.viob{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -557,6 +562,38 @@ pre code {
 .raja{
   color: white;
 
+}
+#raja{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex;
+  flex-direction:row; */
+  display: flex;
+  flex-direction: column;
+
+}
+@media (min-width: 768px){
+#raja {
+    display: flex;
+    flex-direction: row;
+}
+}
+.colu{
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px){
+  .colu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .container {
@@ -8960,6 +8997,7 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important;
+  max-height:40%;
 }
 
 .ml-4,
@@ -10718,6 +10756,7 @@ button.bg-dark:focus {
 @media (min-width: 768px) {
   .text-md-left {
     text-align: left !important;
+    max-width:75%;
   }
   .text-md-right {
     text-align: right !important;
