@@ -554,6 +554,10 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
+.raja{
+  color: white;
+
+}
 
 .container {
   width: 100%;
@@ -561,6 +565,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  /* color: white; */
 }
 
 @media (min-width: 576px) {
@@ -9829,6 +9834,16 @@ button.bg-dark:focus {
   .px-md-4 {
     padding-left: 1.5rem !important;
   }
+  .title.raja{
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 34px;
+    text-transform: uppercase;
+    
+  }
+ .pl-md-45{
+  padding-left: rem
+ }
   .p-md-5 {
     padding: 3rem !important;
   }
@@ -10977,11 +10992,18 @@ h1, h2, h3, h4, h5, h6 {
 .title {
   font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
 }
+.title.raja{
+  font-size: 34px;
+  font-weight: 700;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+}
 
 @media (min-width: 992px) {
   .title {
     font-size: 28px;
-  }
+    }
+    
 }
 
 .section-title {
@@ -11476,7 +11498,7 @@ pre {
 }
 
 .header .container .infos {
-  margin-top: 120px;
+  margin-top: 90px;
 }
 
 .header .container .infos .subtitle {
@@ -11522,6 +11544,12 @@ pre {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-left: 0px;
+}
+.widget-item>h2{
+  -webkit-text-fill-color: #058f4f;
+}
+#about{
+  background-color: #058f4f;
 }
 
 .header .container .img-holder img {
