@@ -272,6 +272,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button:not(:disabled),
@@ -300,6 +301,7 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox;
+  appearance: listbox;
 }
 
 textarea {
@@ -338,6 +340,7 @@ progress {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -11022,8 +11025,8 @@ pre {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #ff7a57;
-  color: #ff7a57;
+  border: 2px solid #495057;
+  color: #696565;
   text-align: center;
   line-height: 40px;
   -webkit-transition: all 0.3s;
@@ -11032,8 +11035,9 @@ pre {
 }
 
 .socials .social-item:hover {
-  background: #ff7a57;
+  background: #058f4f;
   color: #fff;
+  border: 2px solid transparent;
 }
 
 .btn {
