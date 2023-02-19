@@ -206,6 +206,12 @@ pre {
 figure {
   margin: 0 0 1rem;
 }
+.card-body>img{
+  width:50%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  /* mix-blend-mode:normal; */
+}
 
 img {
   vertical-align: middle;
@@ -11248,7 +11254,7 @@ pre {
 }
 
 .custom-card:hover, .custom-card:active {
-  background: #ff7a57;
+  background: rgb(90 181 139);
   color: #fff;
 }
 
