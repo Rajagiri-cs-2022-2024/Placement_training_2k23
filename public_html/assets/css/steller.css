@@ -590,6 +590,9 @@ pre code {
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
+    top: 45px;
+    left: 23px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -11704,7 +11707,7 @@ pre {
 
 .section {
   position: relative;
-  padding: 5rem 0;
+  padding: 6.5rem 0rem 8.5rem;
 }
 
 .section:nth-child(even) {
