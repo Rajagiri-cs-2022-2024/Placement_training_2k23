@@ -165,13 +165,13 @@ sup {
 }
 
 a {
-  color: #ff7a57;
+  color: #058f4f;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #ff3d0b;
+  color: black;
   text-decoration: underline;
 }
 
@@ -11250,7 +11250,7 @@ pre {
   display: block;
   font-size: 40px;
   margin-bottom: 18px;
-  color: #ff7a57;
+  color: #058f4f;
 }
 
 .custom-card:hover, .custom-card:active {
