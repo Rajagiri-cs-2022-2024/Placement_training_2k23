@@ -579,12 +579,37 @@ pre code {
   flex-direction:row; */
   display: flex;
   flex-direction: column;
+  /* animation: 1.2s ease-in-out 0s 1 slideInFromLeft; */
 
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealup{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.2s all ease-out;
+
+}
+.revealup.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 @media (min-width: 768px){
 #raja {
     display: flex;
     flex-direction: row;
+}
+.cs{
+  padding-top: 200px;
 }
 }
 .colu{
@@ -597,8 +622,8 @@ pre code {
     flex-direction: column;
     width: 100%;
     position: relative;
-    top: 45px;
-    left: 23px;
+    /* top: 150px; */
+    left: 100px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -4623,6 +4648,15 @@ input[type="button"].btn-block {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem;
+  animation: 1.2s ease-in-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .navbar > .container,
@@ -11438,7 +11472,7 @@ pre {
   font-weight: bold;
   margin: 0 10px;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0s;
 }
 
 .navbar .navbar-nav .nav-link.active {
@@ -11546,13 +11580,36 @@ pre {
 }
 
 .header .container .infos {
-  margin-top: 90px;
+  margin-top: 0px;
+}
+
+.infos{
+  animation: 2s ease-in-out 0s 1 opacityfromy;
+}
+
+/* @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+@keyframes opacityfromy{
+from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .header .container .infos .subtitle {
   margin-bottom: 0;
   font-size: 25px;
   font-weight: 500;
+}
+.title3
+{
+  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .header .container .infos .title {
@@ -11562,6 +11619,10 @@ pre {
 }
 .title > span{ 
     -webkit-text-fill-color:#058f4f ;
+}
+.title1 > span{
+  -webkit-text-fill-color:#058f4f ;
+  
 }
 
 .header .container .infos p {
