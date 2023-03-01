@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
-			}, 700, function(){
+			}, 1400, function(){
 				window.location.hash = hash;
 			});
       	} 
@@ -40,31 +40,31 @@ function reveal() {
 	for (var i = 0; i < reveals.length; i++) {
 	  var windowHeight = window.innerHeight;
 	  var elementTop = reveals[i].getBoundingClientRect().top;
-	  var elementVisible = 412;
+	  var elementVisible = 400;
   
 	  if (elementTop < windowHeight - elementVisible) {
-		reveals[i].classList.add("active");
+		reveals[i].classList.add("activein");
 	  } else {
-		reveals[i].classList.remove("active");
+		reveals[i].classList.remove("activein");
 	  }
 	}
   }
 window.addEventListener("scroll", reveal);
 
 
-function revealup() {
-	var reveals = document.querySelectorAll(".reveal");
+// function revealup() {
+// 	var reveals = document.querySelectorAll(".revealup");
   
-	for (var i = 0; i < reveals.length; i++) {
-	  var windowHeight = window.innerHeight;
-	  var elementTop = reveals[i].getBoundingClientRect().top;
-	  var elementVisible = 150;
+// 	for (var i = 0; i < reveals.length; i++) {
+// 	  var windowHeight = window.innerHeight;
+// 	  var elementTop = reveals[i].getBoundingClientRect().top;
+// 	  var elementVisible = 150;
   
-	  if (elementTop < windowHeight - elementVisible) {
-		reveals[i].classList.add("active");
-	  } else {
-		reveals[i].classList.remove("active");
-	  }
-	}
-  }
-window.addEventListener("scroll", revealup);
+// 	  if (elementTop < windowHeight - elementVisible) {
+// 		reveals[i].classList.add("activein");
+// 	  } else {
+// 		reveals[i].classList.remove("activein");
+// 	  }
+// 	}
+//   }
+// window.addEventListener("scroll", revealup);
