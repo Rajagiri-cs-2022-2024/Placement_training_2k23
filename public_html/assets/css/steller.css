@@ -338,7 +338,15 @@ legend {
   color: inherit;
   white-space: normal;
 }
-
+@media (max-width: 991.98px)
+{
+  #imaages{
+    display: none;
+  }
+}
+#imaages{
+  left:8%
+}
 progress {
   vertical-align: baseline;
 }
