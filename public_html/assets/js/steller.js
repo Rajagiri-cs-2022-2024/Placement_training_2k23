@@ -68,3 +68,26 @@ window.addEventListener("scroll", reveal);
 // 	}
 //   }
 // window.addEventListener("scroll", revealup);
+function sync(animationName) {
+	function animationEnd(event) {
+	  console.log(event.animationName);
+	  if (event.animationName === animationName) {
+		const el = event.target;
+		el.classList.remove("run");
+		if (el.nextElementSibling) {
+		  el.nextElementSibling.classList.add("run");
+		} else if (el.parentElement && el.parentElement.children && el.parentElement.children[0]) {
+		  el.parentElement.children[0].classList.add("run");
+		}
+	  }
+	}
+	
+	window.addEventListener('animationend', animationEnd, true);
+  
+	const firstEl = document.querySelector(".hi");
+	if (firstEl) {
+	  firstEl.classList.add("run");
+	}
+  }
+  
+  const animationController = sync("play");

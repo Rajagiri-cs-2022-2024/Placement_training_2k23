@@ -9045,9 +9045,18 @@ col-md-3 {
   margin-bottom: 1.5rem !important;
   max-height:40%;
 }
+.firstbbb{
+  height:50px;
+  width:50px;
+  position: relative;
+  background-color: #000;
+}
 .images{
   position: relative;
-  display: grid;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
 }
 .box1{
   position: relative;
@@ -9715,9 +9724,34 @@ col-md-3 {
   }
 }
 @media (max-width: 991.98px){
-  .imaages{
+  #imaages{
     display: none;
   }
+}
+#imaages{
+  /* animation: 2s ease-in-out 0s 1 opacityfromy; */
+ 
+}
+.hi.run {
+  -webkit-animation: play .8s both;
+     -moz-animation: play .8s both;
+      -ms-animation: play .8s both;
+       -o-animation: play .8s both;
+          animation: play 2s ease-in-out both;
+         
+}
+@keyframes play {
+  0%{
+    transform:perspective(500px) translateZ(0px);
+  }
+  
+  50%{
+    transform:perspective(500px) translateZ(30px);
+  }
+  100%{
+    transform:perspective(500px) translateZ(0px);
+  }
+  
 }
 
 @media (min-width: 768px) {
