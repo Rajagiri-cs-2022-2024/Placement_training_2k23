@@ -33,23 +33,22 @@ $(document).ready(function(){
 
 
 
-
-function reveal() {
-	var reveals = document.querySelectorAll(".reveal");
+// function reveal() {
+// 	var reveals = document.querySelectorAll(".reveal");
   
-	for (var i = 0; i < reveals.length; i++) {
-	  var windowHeight = window.innerHeight;
-	  var elementTop = reveals[i].getBoundingClientRect().top;
-	  var elementVisible = 400;
+// 	for (var i = 0; i < reveals.length; i++) {
+// 	  var windowHeight = window.innerHeight;
+// 	  var elementTop = reveals[i].getBoundingClientRect().top;
+// 	  var elementVisible = 350;
   
-	  if (elementTop < windowHeight - elementVisible) {
-		reveals[i].classList.add("activein");
-	  } else {
-		reveals[i].classList.remove("activein");
-	  }
-	}
-  }
-window.addEventListener("scroll", reveal);
+// 	  if (elementTop < windowHeight - elementVisible) {
+// 		reveals[i].classList.add("activein");
+// 	  } else {
+// 		reveals[i].classList.remove("activein");
+// 	  }
+// 	}
+//   }
+// window.addEventListener("scroll", reveal);
 
 
 // function revealup() {
